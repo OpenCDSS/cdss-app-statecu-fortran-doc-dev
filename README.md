@@ -1,7 +1,134 @@
-# cdss-app-statecu-fortran/doc-dev-mkdocs-project #
+# cdss-app-statecu-fortran-doc-dev #
 
-This folder contains a MkDocs project for developer documentation.
-Navigable developer documentation is created using Markdown, which uses text files that can be easily tracked in Git.
+This repository contains [Colorado's Decision Support Systems (CDSS)](https://www.colorado.gov/cdss)
+StateCU developer documentation.  See the following online resources:
 
-* [Learn StateCU (for Software Developers) website](http://learn.openwaterfoundation.org/owf-learn-cdss-statecu-dev/index.html)
-* [Development Tasks/Documenting page from above website](http://learn.openwaterfoundation.org/owf-learn-cdss-statecu-dev/dev-tasks/documenting/)
+* OpenCDSS Documentation
+	+ Published [OpenCDSS Documentation](http://learn.openwaterfoundation.org/cdss-website-opencdss/)
+	on Open Water Foundation website - transitioning to CO DNR website
+	+ Published [OpenCDSS Documentation](https://storage.googleapis.com/static-cdss-state-co-us/opencdss/latest/)
+	on CO DWR website - not yet the final location
+* StateCU Developer Documentation
+	+ Published [StateCU Documentation](http://learn.openwaterfoundation.org/cdss-app-statecu-fortran-doc-dev/)
+	on Open Water Foundation website - transitioning to CO DNR website
+	+ Published [StateCU  Documentation](https://storage.googleapis.com/static-cdss-state-co-us/statecu/latest/doc-dev/)
+	on CO DWR website - not yet the final location
+* StateCU User Documentation
+	+ Published [StateCU Documentation](http://learn.openwaterfoundation.org/cdss-app-statecu-fortran-doc-user/)
+	on Open Water Foundation website - transitioning to CO DNR website
+	+ Published [StateCU  Documentation](https://storage.googleapis.com/static-cdss-state-co-us/statecu/latest/doc-user/)
+	on CO DWR website - not yet the final location
+
+This page contains the following sections:
+
+* [Repository Contents](#repository-contents)
+* [Development Environment](#development-environment)
+* [Editing and Viewing Content](#editing-and-viewing-content)
+* [Style Guide](#style-guide)
+* [License](#license)
+* [Contributing](#contributing)
+* [Maintainers](#maintainers)
+* [Release Notes](#release-notes)
+
+-----------------
+
+## Repository Contents ##
+
+The repository contains the following:
+
+```text
+cdss-app-statecu-fortran-doc-dev/    Repository name and main folder should match.
+  build-util/                        Useful scripts to view, build, and deploy documentation.
+  mkdocs-project/                    Typical MkDocs project for this documentation.
+    mkdocs.yml                       MkDocs configuration file for website.
+    docs/                            Folder containing source Markdown and other files for website.
+    site/                            Folder created by MkDocs containing the static website - ignored using .gitignore.
+  .github/                           Files specific to GitHub such as issue template.
+  .gitattributes                     Typical Git configuration file for repository attributes.
+  .gitignore                         Typical Git configuration file for ignored file list.
+  README.md                          This file.
+```
+
+The following folder structure is recommended for StateCU development.
+Top-level folders should be created as necessary.
+Repositories are expected to be on the same folder level to allow scripts in those repositories to work.
+
+```
+C:\Users\user\                               Windows user home folder.
+/c/Users/user/                               Git Bash user home folder that overlaps Windows files.
+/home/user/                                  Linux user home folder.
+/cygdrive/C/Users/user/                      Cygwin user home folder that overlaps Windows files.
+  cdss-dev/                                  Projects that are part of Colorado's Decision Support Systems.
+    StateCU/                                 StateCU product folder.
+----------- below here folders must match --------------------------
+      git-repos/                             Git repositories for StateCU.
+        cdss-app-statecu-fortran/            StateCU source code development.
+        cdss-app-statecu-fortran-doc-dev/    StateCU developer documentation.
+        cdss-app-statecu-fortran-doc-user/   StateCU user documentation.
+        cdss-app-statecu-fortran-test/       StateCU automated tests.
+```
+
+## Development Environment ##
+
+The development environment for contributing to this project requires installation of Python, MkDocs, and Material MkDocs theme.
+Python 3 has been used for development.
+See the [MkDocs website](https://www.mkdocs.org/) and
+[OWF / Learn MkDocs](http://learn.openwaterfoundation.org/owf-learn-mkdocs/)
+documentation for information about installing these tools.
+
+## Editing and Viewing Content ##
+
+If the development environment is properly configured, edit and view content as follows:
+
+1. Edit content:
+    1. The `mkdocs-project/docs` folder contains website content.
+    2. The `mkdocs-project/mkdocs.yml` file lists files to include in the website.
+2. Run the `build-util/run-mkdocs-serve-8000.sh` script (Git Bash, Cygwin, Linux).
+3. View content in a web browser using URL `http://localhost:8000`.
+
+## Style Guide ##
+
+The following are general style guide recommendations for this documentation,
+with the goal of keeping formatting simple in favor of focusing on useful content:
+
+* Use the Material MkDocs theme - it looks nice, provides good navigation features, and enables search.
+* Follow MkDocs Markdown standards - use extensions beyond basic Markdown when useful.
+* Show files and program names as `code (tick-surrounded)` formatting.
+* Where a source file can be linked to in GitHub, provide a link so that the most current file can be viewed.
+* Use triple-tick formatting for code blocks, with language specifier.
+* Use ***bold italics*** when referencing UI components such as menus.
+* Use slashes to indicate ***Menu / SubMenu***.
+* Place images in a an `images` folder or `contentpage-images` folder if need to separate images.
+* Minimize the use of inlined HTML, but use it where Markdown formatting is limited.
+* Although the Material them provides site and page navigation sidebars,
+provide in-line table of contents on pages, where appropriate, to facilitate review of page content.
+
+## License ##
+
+The license for this documentation is the
+[Creative Commons Attribution International (CC BY 4.0) License](LICENSE.md).
+
+## Contributing ##
+
+Contribute to the documentation as follows:
+
+1. Use GitHub repository issues to report minor issues.
+2. Use GitHub pull requests.
+
+In order to contribute, you must first sign and submit the Contributor License Agreement (CLA).
+**Need to add the link here to OpenCDSS web page that describes this.**
+
+## Maintainers ##
+
+This repository is maintained by the OpenCDSS team.
+
+## Release Notes ##
+
+The following release notes indicate the major update history for documentation.
+See the GitHub issues for details.
+
+* 2019-03-25 - Split documentation out of `cdss-app-statecu-fortran` repository.
+* 2019-03-23 - Update to MkDocs 1.04.
+* 2018-12-02 - Update for public open source access.
+* 2018-08-06 - Update content to agree with latest OpenCDSS website and conventions.
+* 2018-06-27 - Copy content from files saved with code.  Separate to facilitate editing.
