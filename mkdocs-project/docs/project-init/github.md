@@ -27,7 +27,7 @@ This documentation contains the following sections:
 
 ## Prerequisites
 
-This step requires that the Git software was previously installed as per [Development Environment / Git](../dev-env/git/) documentation.
+This step requires that the Git software was previously installed as per [Development Environment / Git](../dev-env/git.md) documentation.
 
 ## Create a New StateCU Repository on GitHub
 

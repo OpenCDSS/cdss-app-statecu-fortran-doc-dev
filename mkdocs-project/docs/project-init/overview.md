@@ -1,11 +1,11 @@
 # Initial Project Setup / Overview
 
 The Initial Project Setup documentation is a record of how the project was set up the first time.
-It is assumed that all software listed in the [Development Environment](../dev-env/overview/) has been installed,
+It is assumed that all software listed in the [Development Environment](../dev-env/overview.md) has been installed,
 although the project initialization steps will list each setup step.
 
 This documentation is a useful reference in case the project needs to be reinitialized or other similar projects need to be configured.
-Sections of this documentation are also referenced by the [New Developer](../dev-new/overview/) documentation,
+Sections of this documentation are also referenced by the [New Developer](../dev-new/overview.md) documentation,
 such as configuring the Eclipse workspace.
 
 This documentation includes the following sections:
@@ -14,7 +14,7 @@ This documentation includes the following sections:
 * [Development Folder Structure](#development-folder-structure) - overview of the development files
 * [Eclipse File Location Overview](#eclipse-file-location-overview) - locations of various Eclipse files
 * [Project Initialization Steps](#project-initialization-steps) - steps to initialize the StateCU software project,
-done once and thereafter [New Developer](../dev-new/overview/) instructions apply
+done once and thereafter [New Developer](../dev-new/overview.md) instructions apply
 
 --------------------
 
@@ -126,17 +126,17 @@ The following are the project initialization steps in the recommended order,
 although some steps were actually implemented in slightly different order for practical reasons.
 
 1. Initialize software development folder and Git repository to receive files
-	1. [Create Development Home Folder](home-folder/) - manually create project home folder that will hold all the software development files
-	2. [GitHub Git Repository](github/) - create the GitHub repository from the legacy repository
+	1. [Create Development Home Folder](home-folder.md) - manually create project home folder that will hold all the software development files
+	2. [GitHub Git Repository](github.md) - create the GitHub repository from the legacy repository
 2. Initialize Eclipse development environment
-	3. [Eclipse Run Script](eclipse-run-script/) - the script ensures that the proper version of Eclipse and Java are used
-	4. [Eclipse Workspace](eclipse-workspace/) - create an Eclipse workspace for the StateCU software project
-	5. [Eclipse StateCU Project](eclipse-statecu-project/) - configure the project connected to the Git repository files
-	6. [Eclipse Folder Structure](eclipse-folder-structure/) - implement the development folder structure
-	7. [Eclipse Make Targets](eclipse-make-targets/) - implement make targets to run makefile
+	3. [Eclipse Run Script](eclipse-run-script.md) - the script ensures that the proper version of Eclipse and Java are used
+	4. [Eclipse Workspace](eclipse-workspace.md) - create an Eclipse workspace for the StateCU software project
+	5. [Eclipse StateCU Project](eclipse-statecu-project.md) - configure the project connected to the Git repository files
+	6. [Eclipse Folder Structure](eclipse-folder-structure.md) - implement the development folder structure
+	7. [Eclipse Make Targets](eclipse-make-targets.md) - implement make targets to run makefile
 3. Initialize default utility scripts
-	1. [Build Utility Scripts](build-util/) - helpful build utility scripts for developers 
+	1. [Build Utility Scripts](build-util.md) - helpful build utility scripts for developers 
 4. Initialize documentation
-	1. [Documentation, Developer](doc-dev/) - create initial MkDocs project for developer documentation
-	2. [Documentation, User](doc-user/) - create initial MkDocs project for user documentation
-	3. [Doxygen](doc-doxygen/) - configure Doxygen project to generate API documentation
+	1. [Documentation, Developer](doc-dev.md) - create initial MkDocs project for developer documentation
+	2. [Documentation, User](doc-user.md) - create initial MkDocs project for user documentation
+	3. [Doxygen](doc-doxygen.md) - configure Doxygen project to generate API documentation

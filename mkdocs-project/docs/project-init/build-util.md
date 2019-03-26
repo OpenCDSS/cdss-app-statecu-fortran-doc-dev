@@ -25,11 +25,11 @@ For Windows:  `C:\Users\user\cdss-dev\StateCU\git-repos\cdss-app-statecu-fortran
 Use this script to configure the MinGW environment so that compilers can be found in the command shell and in eclipse.
 This script is called by other scripts that use the MinGW environment, such as `run-eclipse-statecu-mingw.bat`.
 
-This script is described first in [Develompent Environment / Machine](dev-env/machine/) and is located in `build-util/mingw`.
+This script is described first in [Development Environment / Machine](../dev-env/machine.md) and is located in `build-util/mingw`.
 
 ## Script to Run Eclipse - `run-eclipse-statecu-mingw`
 
 Use this script to start Eclipse in the MinGW environment.
 This script calls `setup-mingw-env` before calling Eclipse.
 
-This script is described first in [Initial Project Setup / Eclipse Run Script](eclipse-run-script/) and is located in `build-util/eclipse`.
+This script is described first in [Initial Project Setup / Eclipse Run Script](../project-init/eclipse-run-script.md) and is located in `build-util/eclipse`.

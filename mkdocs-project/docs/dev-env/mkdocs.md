@@ -21,7 +21,7 @@ This documentation includes the following sections:
 
 ## Prerequisites
 
-Before installing MkDocs, it is necessary that [Python is installed](python) and [`pip` is installed](pip).
+Before installing MkDocs, it is necessary that [Python and pip are installed](python.md).
 
 ## Install MkDocs
 

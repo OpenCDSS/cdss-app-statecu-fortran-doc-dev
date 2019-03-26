@@ -15,7 +15,7 @@ The following sections are included in this documentation:
 
 ## Prerequisites
 
-This step requites that Eclipse/Photran was previously installed as per the [Developer Environment / Eclipse and Photran](../dev-env/eclipse/) documentation.
+This step requites that Eclipse/Photran was previously installed as per the [Developer Environment / Eclipse and Photran](../dev-env/eclipse.md) documentation.
 
 ## Default Eclipse Run Script
 

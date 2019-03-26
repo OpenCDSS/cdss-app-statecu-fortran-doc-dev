@@ -1,6 +1,6 @@
 # Initial Project Setup / Create Development Home Folder
 
-See the [discussion of development project folder structure](overview#development-folder-structure).
+See the [discussion of development project folder structure](overview.md#development-folder-structure).
 
 The following sections are included in this documentation:
 
@@ -56,4 +56,3 @@ Do the following in a Windows command shell or the equivalent in Windows file ex
 > # Create a folder for the NovaStar REST web services software project development files
 > mkdir StateCU
 ```
-

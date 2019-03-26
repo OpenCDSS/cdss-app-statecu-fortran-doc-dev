@@ -2,9 +2,9 @@
 
 This Development Environment documentation is intended to be used as a reference by a software developer that
 sets up the project for the first time or initializes a new development environment to contribute to the project.
-Specific sections are referenced by the [Initial Project Setup](../project-init/overview/),
-[Deployed Environment](../deployed-env/overview/), and
-[New Developer](../dev-new/overview/) sections.
+Specific sections are referenced by the [Initial Project Setup](../project-init/overview.md),
+[Deployed Environment](../deployed-env/overview.md), and
+[New Developer](../dev-new/overview.md) sections.
 
 This documentation includes the following sections:
 
@@ -16,7 +16,7 @@ This documentation includes the following sections:
 
 ## Development Environment Software Requirements
 
-The following software are needed in the StateCU development environment and should be installed before doing [Initial Project Setup](../project-init/overview/),
+The following software are needed in the StateCU development environment and should be installed before doing [Initial Project Setup](../project-init/overview.md),
 although the Initial Project Setup documentation generally indicates prerequisites for software that needs to be installed.
 Steps can be skipped if they have been completed previously as part of operating system setup or
 during setup of other software development projects.
@@ -31,17 +31,17 @@ although this documentation is intended to help facilitate development by provid
 
 The following software are required for StateCU development:
 
-1. [Machine](machine/) - minimal GNU for Windows (MinGW), Cygwin, or Linux virtual machine (VM), to support `gfortran` compiler
+1. [Machine](machine.md) - minimal GNU for Windows (MinGW), Cygwin, or Linux virtual machine (VM), to support `gfortran` compiler
 (**MinGW on Windows is the initial focus and Linux has been tested to a lesser degree**)
-2. [Git](git/) - needed to perform command line version control operations
-3. [Python and pip](python/) - needed by MkDocs and pytest, and useful general tool
-4. [pytest](pytest/) - an option being evaluated for automated testing
-5. [MkDocs](mkdocs/) - MkDocs is used for developer and user documentation static websites, including this documentation
-6. [Java 8](java8/) - used to run Eclipse, and can be used to write utility programs
-7. [gfortran](gfortran/) - compiler for the StateCU Fortran software
-8. [Eclipse/Photran](eclipse/) - IDE used for interactive Fortran software development
-9. [Doxygen](doxygen/) - documentation tool
-10. [KDiff3](kdiff3/) - tool for comparing files
+2. [Git](git.md) - needed to perform command line version control operations
+3. [Python and pip](python.md) - needed by MkDocs and pytest, and useful general tool
+4. [pytest](pytest.md) - an option being evaluated for automated testing
+5. [MkDocs](mkdocs.md) - MkDocs is used for developer and user documentation static websites, including this documentation
+6. [Java 8](java8.md) - used to run Eclipse, and can be used to write utility programs
+7. [gfortran](gfortran.md) - compiler for the StateCU Fortran software
+8. [Eclipse/Photran](eclipse.md) - IDE used for interactive Fortran software development
+9. [Doxygen](doxygen.md) - documentation tool
+10. [KDiff3](kdiff3.md) - tool for comparing files
 
 -------------------
 
@@ -55,7 +55,7 @@ and possibly back-tracking on previous software development work.
 Using a consistent development environment for all developers ensures that documentation is applicable and troubleshooting is consistent.
 Therefore, the software installation locations described in this documentation are highly recommended to avoid issues.
 
-See the discussion of [Initial Project Setup / Development Folder Structure](../project-init/overview#development-folder-structure)
+See the discussion of [Initial Project Setup / Development Folder Structure](../project-init/overview.md#development-folder-structure)
 for a folder structure that is assumed in this documentation.
 It is important for software developers to understand the software tools and configuration so that they can troubleshoot configuration issues.
 

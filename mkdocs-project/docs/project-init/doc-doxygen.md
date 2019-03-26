@@ -18,7 +18,7 @@ This documentation includes the following sections:
 
 ## Prerequisites
 
-Configuring a Doxygen project requires that the [Doxygen software was previously installed](../dev-env/doxygen/),
+Configuring a Doxygen project requires that the [Doxygen software was previously installed](../dev-env/doxygen.md),
 including the GraphViz software.
 
 ## Create Doxygen Project
