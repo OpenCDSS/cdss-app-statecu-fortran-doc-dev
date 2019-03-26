@@ -21,8 +21,8 @@ This documentation includes the following sections:
 
 The prerequisites for installing Eclipse are:
 
-* [Java 8](java8) - Java is needed to run Eclipse
-* [`gfortran` compiler](gfortran) - Eclipse relies on `gfortran` and other development tools having been installed in MinGW, Cygwin, or Linux
+* [Java 8](java8.md) - Java is needed to run Eclipse
+* [`gfortran` compiler](gfortran.md) - Eclipse relies on `gfortran` and other development tools having been installed in MinGW, Cygwin, or Linux
 
 ## Install Eclipse and Photran
 

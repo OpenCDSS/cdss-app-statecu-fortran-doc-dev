@@ -16,7 +16,6 @@ This documentation page includes the following sections:
 * [Colorado's Decision Support Systems](#colorados-decision-support-systems) - the system under which the software is maintained
 * [License](#license) - license for software and this documentation
 * [Source Repository on GitHub](#source-repository-on-github) - location of StateCU repository in GitHub
-* [MkDocs](#mkdocs) - the tool used to create this documentation
 
 ## How to Use this Documentation ##
 
@@ -68,8 +67,3 @@ The StateCU software is licensed using the GPL v3 license.
 
 The source files for this documentation are maintained in the
 [StateCU GitHub repository](https://github.com/OpenCDSS/cdss-app-statecu-fortran/tree/master/doc-dev-mkdocs-project/).
-
-## MkDocs ##
-
-This documentation is prepared using MkDocs.
-For full MkDocs documentation visit [mkdocs.org](http://mkdocs.org).

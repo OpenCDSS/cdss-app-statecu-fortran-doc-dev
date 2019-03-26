@@ -20,7 +20,7 @@ This documentation contains the following sections:
 
 # Prerequisites
 
-The `pytest` software depends on [Python and `pip`](python/) being installed.
+The `pytest` software depends on [Python and `pip`](python.md) being installed.
 
 # Install `pytest`
 

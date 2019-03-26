@@ -3,7 +3,7 @@
 # Reference: http://www.mkdocs.org/user-guide/configuration/
 #
 site_name: 'StateCU (Develop)'
-pages:
+nav:
 - Home: index.md
 - 'New Developer Setup':
   - 'Overview': dev-new/overview.md
@@ -51,17 +51,28 @@ pages:
   - 'Documentation, User (MkDocs)': project-init/doc-user.md
   - 'Documentation, API (Doxygen)': project-init/doc-doxygen.md
 # ------- configuration properties ---------------
-# Use Material theme
-# - installation notes:  https://github.com/squidfunk/mkdocs-material
-theme: material
-#theme: readthedocs
-# Don't indicate the repo because Edit will be shown on every page (don't want that in deployed mode)
-# - Also see edit_uri if repo_url is specified
-#repo_url:  https://github.com/OpenCDSS/cdss-app-statecu-fortran
-site_description:  'CDSS StateCU software developer documentation'
-site_author:  'Colorado Department of Natural Resources'
-site_favicon:  images/StateCU-favicon.png
+# Alphabetize
+# ------------------------------------------------
 copyright:  Colorado Department of Natural Resources
+# ------------------------------------------------
 # Use extra CSS to customize styles, based on theme
 extra_css:
   - 'css/extra-material-theme.css'
+# ------------------------------------------------
+# Google Analytics
+# - see:  https://squidfunk.github.io/mkdocs-material/getting-started/#google-analytics
+google_analytics:
+ - 'UA-43023264-1'
+ - auto
+# ------------------------------------------------
+# Don't publish the repo because it leads to irritating edit links
+#repo_url:  https://github.com/OpenCDSS/cdss-app-statecu-fortran
+# ------------------------------------------------
+site_author:  'Colorado Department of Natural Resources'
+site_description:  'CDSS StateCU software developer documentation'
+# ------------------------------------------------
+# Use Material theme
+# - installation notes:  https://github.com/squidfunk/mkdocs-material
+theme:
+  name: material
+  favicon: images/StateCU-favicon.png

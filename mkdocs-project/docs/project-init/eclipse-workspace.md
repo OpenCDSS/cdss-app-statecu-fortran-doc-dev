@@ -1,7 +1,7 @@
 # Initial Project Setup / Eclipse Workspace
 
 The Eclipse workspace folder should be created as per
-the [development folder structure](overview#development-folder-structure):
+the [development folder structure](overview.md#development-folder-structure):
 
 * Linux: `~/cdss-dev/StateCU/eclipse-workspace`
 * Windows: `C:\Users\user\cdss-dev\StateCU\eclipse-workspace`
@@ -22,7 +22,7 @@ The following sections are included in this documentation:
 ## Prerequisites
 
 Creating an Eclipse workspace requires that Eclipse is installed and it is recommended that Eclipse
-is run using an [Eclipse run script](eclipse-run-script/).
+is run using an [Eclipse run script](eclipse-run-script.md).
 
 ## Background
 
@@ -38,7 +38,7 @@ Although it is possible to create one workspace and manage multiple development 
 (e.g., StateCU and additional software) under one workspace,
 this can become confusing.
 The following assumes that a new workspace is created specifically for the StateCU project
-consistent with the [development project folder structure](overview#development-folder-structure).
+consistent with the [development project folder structure](overview.md#development-folder-structure).
 
 ## Create Eclipse Workspace Folder
 
@@ -62,7 +62,7 @@ $ mkdir eclipse-workspace
 
 ## Specify Eclipse Workspace Folder to Eclipse
 
-Start Eclipse using the [run script](eclipse-run-script/)
+Start Eclipse using the [run script](eclipse-run-script.md)
 and select the workspace folder created in the previous step, for example for software developer "sam":
 
 ![Eclipse new workspace](eclipse-workspace-images/eclipse-workspace-select.png)
@@ -86,4 +86,4 @@ This will be evaluated as Eclipse is used in development.
 
 ## Next Step
 
-See the configuration of the [Eclipse StateCU Project](eclipse-statecu-project).
+See the configuration of the [Eclipse StateCU Project](eclipse-statecu-project.md).
