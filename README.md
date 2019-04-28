@@ -3,21 +3,9 @@
 This repository contains [Colorado's Decision Support Systems (CDSS)](https://www.colorado.gov/cdss)
 StateCU developer documentation.  See the following online resources:
 
-* OpenCDSS Documentation
-	+ Published [OpenCDSS Documentation](http://learn.openwaterfoundation.org/cdss-website-opencdss/)
-	on Open Water Foundation website - transitioning to CO DNR website
-	+ Published [OpenCDSS Documentation](https://storage.googleapis.com/static-cdss-state-co-us/opencdss/latest/)
-	on CO DWR website - not yet the final location
-* StateCU Developer Documentation
-	+ Published [StateCU Documentation](http://learn.openwaterfoundation.org/cdss-app-statecu-fortran-doc-dev/)
-	on Open Water Foundation website - transitioning to CO DNR website
-	+ Published [StateCU  Documentation](https://storage.googleapis.com/static-cdss-state-co-us/statecu/latest/doc-dev/)
-	on CO DWR website - not yet the final location
-* StateCU User Documentation
-	+ Published [StateCU Documentation](http://learn.openwaterfoundation.org/cdss-app-statecu-fortran-doc-user/)
-	on Open Water Foundation website - transitioning to CO DNR website
-	+ Published [StateCU  Documentation](https://storage.googleapis.com/static-cdss-state-co-us/statecu/latest/doc-user/)
-	on CO DWR website - not yet the final location
+* [OpenCDSS Documentation](http://opencdss.state.co.us/opencdss/)
+* [StateCU Developer Documentation](http://opencdss.state.co.us/statecu/latest/doc-dev/)
+* [StateCU User Documentation](http://opencdss.state.co.us/statecu/latest/doc-user/)
 
 This page contains the following sections:
 
@@ -116,7 +104,6 @@ Contribute to the documentation as follows:
 2. Use GitHub pull requests.
 
 In order to contribute, you must first sign and submit the Contributor License Agreement (CLA).
-**Need to add the link here to OpenCDSS web page that describes this.**
 
 ## Maintainers ##
 
@@ -127,6 +114,7 @@ This repository is maintained by the OpenCDSS team.
 The following release notes indicate the major update history for documentation.
 See the GitHub issues for details.
 
+* 2019-04-27 - Update to use opencdss.state.co.us.
 * 2019-03-25 - Split documentation out of `cdss-app-statecu-fortran` repository.
 * 2019-03-23 - Update to MkDocs 1.04.
 * 2018-12-02 - Update for public open source access.
