@@ -1,5 +1,7 @@
 # Initial Project Setup / Overview
 
+**This documentation is for historical purposes only.  Refer to current documentation for active project information.**
+
 The Initial Project Setup documentation is a record of how the project was set up the first time.
 It is assumed that all software listed in the [Development Environment](../dev-env/overview.md) has been installed,
 although the project initialization steps will list each setup step.

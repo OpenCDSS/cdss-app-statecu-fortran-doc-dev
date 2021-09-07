@@ -2,23 +2,48 @@
 
 This documentation discusses how StateCU should be deployed into an operational environment.
 It is important to keep this target in sight as the end result of software development.
-However, software development will occur using a version-controlled copy of files that is different than the deployed environment
-(see [New Developer Setup](../dev-new/overview.md) documentation for how to set up a new developer environment).
-Files from the developer environment can be installed to the deployed environment for local testing,
-and StateCU users that are not developers will only be working in the deployed environment.
+StateCU modelers that are not developers will only be working in the deployed environment.
+
+Software development occurs using version-controlled copies of files that
+are different than the deployed environment.
+See [New Developer Setup](../dev-new/overview.md) documentation for how to set up a new developer environment.
+Files from the developer environment can be installed to the deployed environment for local testing.
 
 This documentation contains the following sections:
 
-* [Location of Installed StateCU Software](#location-of-installed-statecu-software)
-* [Relationship of StateCU Executable with StateCU GUI](#relationship-of-statecu-executable-with-statecu-gui)
+* [Packaging the StateCU Executable with StateCU Dataset](#packaging-the-statecu-executable-with-statecu-dataset)
+* [Packaging the StateCU Executable with StateCU GUI](#packaging-the-statecu-executable-with-statecu-gui)
 * [StateCU 32 and 64 Bit Executable Considerations](#statecu-32-and-64-bit-executable-considerations)
 
 -----------------
 
-## Location of Installed StateCU Software
+## Packaging the StateCU Executable with StateCU Dataset
 
-The legacy approach for distributing the StateCU executable (as of version 13.03) has been to package the `statecu.exe` file
-with the StateCU GUI.  For examaple, see the [CDSS StateCU Download](http://www.colorado.gov/pacific/cdss/statecu).
+Each StateCU dataset contains the `StateCU` folder for model input files.
+Some CDSS datasets include the StateCU executable with input files to ensure that the correct version
+of the software is used with the dataset.
+This approach can avoid problems and is recommended for deployment.
+
+As of StateCU 14.0.0, the executable is available on the
+[OpenCDSS website](https://opencdss.state.co.us/statecu/) in a zip file.
+A specific StateCU executable version can be packaged with a StateCU dataset by
+copying the `statecu*.exe` executable file into the dataset `StateCU` folder.
+The `statecu.cmd` file can also be packaged with a dataset to provide a general command
+for command-line use and to call from the StateCU GUI.
+
+## Packaging the StateCU Executable with StateCU GUI
+
+**As of StateCU 14.0.0, the executable is available on the
+[OpenCDSS website](https://opencdss.state.co.us/statecu/) in a zip file.
+The executable name contains the version to uniquely identify the software version.
+The StateCU executable is also distributed with a general `statecu.cmd` file
+that can be used to run the most recent executable, for example from the StateCU GUI.
+The StateCU GUI can be updated to use the general `statecu.cmd` program
+as the default and can also rrun the version in a dataset's `StateCU` folder.**
+
+The approach for distributing the StateCU executable (as of version 13.03) has been to package the `statecu.exe` file
+with the StateCU GUI and datasets, as described in the next two sections.
+For example, see the [CDSS StateCU](https://cdss.colorado.gov/software/statecu) web page.
 For Windows, the software defaults to an installation folder: 
 
 ```
@@ -28,43 +53,23 @@ C:\CDSS\StateCU\bin\
     other files                             (Many other files are used by the GUI)
 ```
 
-**Need to confirm where StateCU should be installed going forward.
-Perhaps should have a default location under C:\CDSS but also recommend copying to dataset folder to ensure compatibility.
-Other issues to be considered include the following:**
+### Information from Jim Brannon about the StateCU GUI
 
-* Should the software install into a versioned folder like CDSS TSTool, Python, and other software?
-For example:  `C:\CDSS\StateCU-13.03\bin\statecu.exe`.
-This would be more flexible when new features are added.
-The downside is that it would complicate simple use where "statecu" is entered in a command window,
-although the latest install could always update the `PATH` environment variable.
-An intelligent StateCU runner script could be developed (similar to Python `py` program)
-to look for StateCU in normal locations.
-This program could be installed in a common location such as `C:\CDSS\bin`.
-* Should a version number be included in the StateCU executable filename?
-This is less of an issue if the StateCU install folder is versioned.
-`statecu -v` can be run to print the version when in doubt.
-
-## Relationship of StateCU Executable with StateCU GUI
-
-The legacy approach for distributing the StateCU executable (as of version 13.03) has been to package the `statecu.exe` file
-with the StateCU GUI.  For examaple, see the [CDSS StateCU Download](http://cdss.state.co.us/software/Pages/StateCU.aspx).
-
-**Need to decide how the StateCU executable should continue to be packaged only with the GUI,
-and perhaps also be distributed separately, especially Linux versions.
-Also, the StateCU GUI is out of date and needs updated.  Need to prioritize within the OpenCDSS effort.**
-
-Information from Jim Brannon:
+The following information was provided during initial OpenCDSS repository configuration.
 
 * The current StateCU GUI is VB code, rewritten only where it had to be from the original VB6.
 In other words, a lot of the original VB6 code is still in there - but it compiled, so it was left alone.
 It is not modern era VB.NET at all. Therefore it can't be compiled except on the LRE computer given to DWR. Kelley T or Mary H has it.
 
-* When I started working on StateCU, we (LRE) moved both the FORTRAN and VB6 code into the Visual Studio environment and begn using Intel FORTRAN.
+* When I started working on StateCU, we (LRE) moved both the FORTRAN and VB6 code into the Visual Studio environment and begin using Intel FORTRAN.
 Later I separated the FORTRAN StateCU code from Visual Studio, and modified it to be amenable to other compilers like gfortran.
 At that time at LRE, we were not using a version control system, so complete sets of StateCU code for each version were kept in carefully named folders.
 StateCU FORTRAN code was finally added to a version control system (git) much later, but StateCU code was changing infrequently by that time.
 
 ## StateCU 32 and 64 Bit Executable Considerations
+
+**As of StateCU 14.0.0, the software is distributed as a 64-bit executable.
+The following information is for historical purposes only and can be used to confirm whether an executable is 32-bit or 64-bit.**
 
 The StateCU software is a Fortran program that is compiled to a 32-bit static executable using the `gfortran` compiler.
 The 32-bit Windows executable will run on 64-bit Windows 7 and 10 computers similar to other 32-bit software.

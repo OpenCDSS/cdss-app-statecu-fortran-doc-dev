@@ -75,4 +75,4 @@ site_description:  'CDSS StateCU software developer documentation'
 # - installation notes:  https://github.com/squidfunk/mkdocs-material
 theme:
   name: material
-  favicon: images/StateCU-favicon.png
+  favicon: images/opencdss-favicon.ico

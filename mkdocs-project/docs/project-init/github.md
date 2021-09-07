@@ -31,10 +31,11 @@ This step requires that the Git software was previously installed as per [Develo
 
 ## Create a New StateCU Repository on GitHub
 
-The private repository [cdss-app-statecu-fortran](https://github.com/OpenWaterFoundation/cdss-app-statecu-fortran)
+The private repository `cdss-app-statecu-fortran`
 was created using the GitHub website and Open Water Foundation organization account.
 This established an empty "remote" repository.
-Following the above link will currently go to the OpenCDSS version of the repository.
+The repository was later moved to the GitHub OpenCDSS account as
+[`cdss-app-statecu-fortran`](https://github.com/OpenCDSS/cdss-app-statecu-fortran).
 
 ## Clone Legacy GitHub StateCU Repository
 
@@ -142,4 +143,3 @@ To https://github.com/OpenWaterFoundation/cdss-app-statecu-fortran.git
 Checking on the GitHub website verifies that the tags are available:
 
 ![GitHub tags](github-images/github-initial-tags.png)
-

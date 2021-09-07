@@ -23,31 +23,49 @@ Compiling on Linux is similar to Windows.  Use the `make` command targets.
 
 ### Windows - MinGW
 
-To compile StateCU on the command line it is first necessary to configure the environment to run the compiler.
-Open a Windows command prompt window and change to the folder where the setup script exists.
-Then run the `build-util/mingw/setup-mingw-env.bat` batch file to configure the MinGW environment (note that setting up the environment in the window only needs
-to be done once after the window is opened).
+To compile StateCU, open an ***MSYS2 MinGW 64-bit*** window.
+There is no need for any additional configuration (as was required in earlier 32-bit StateCU development environment).
+
+Then change to the code location and run the makefile,
+replacing `user` with the appropriate user name:
 
 ```
-> C:
-> cd \Users\user\cdss-dev\StateCU\git-repos\cdss-app-statecu-fortran\build-util\mingw
-> setup-mingw-env.bat
+> cd /C/Users/user/cdss-dev/StateCU/git-repos/cdss-app-statecu-fortran/src/main/fortran
+> make veryclean
+> make statecu_prog
 ```
 
-Then change to the code location and run the makefile:
-
-```
-> C:
-> cd \Users\user\cdss-dev\StateCU\git-repos\cdss-app-statecu-fortran\src\main\fortran
-> make clean
-> make statecu
-```
-
-The executable `statecu.exe` is created in the same folder and can be run with model input (in a test folder separate from the code).
+The executable with name similar to `statecu-14.0.0-gfortran-win-64bit.exe`
+is created in the same folder and can be run with model input,
+such as in a test folder separate from the code.
+The version will match that in the `gcommon.inc` file.
 
 Use the `make help` command to list available `makefile` targets.
+The following are the main targets that are useful during development:
+
+| **`makefile` Target**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** |
+| -- | -- |
+| `clean` | Remove dynamically created files (but not final executable). |
+| `help` | Print help. |
+| `installer` | Create the StateCU software installer zip file. |
+| `statecu_prog` | Compile the StateCU executable, recompiling any `.o` if `.for` files are modified.  Same as `statecu_o3` to compile the optimized variant for testing.  **Use for normal development.**
+| `statecu_check` | Compile the StateCU executable including all runtime checks. |
+| `statecu_o3` | Compile the StateCU executable for optimization level 3 and limited runtime checks.  Use for production release and full testing. |
+| `statecu_release` | Do clean compile on `check` and `o3` release variant and copy `o3` variant to plain name without `-o3` for release. **Use to prepare for software release.** |
+| `veryclean` | Make the 'clean' target, and also remove the final executable. |
+| `veryclean_check` | Needed by `statecu_release`. |
+| `veryclean_o3` | Needed by `statecu_release`. |
+
+A typical development session will involve repeating:
+
+1. editing source code
+2. `make statecu_prog`
+3. Copy the excutable to `StateCU` folder of a dataset for testing.  See the [Testing](testing.md) documentation.
 
 ## Compile StateCU in Eclipse
+
+**This documentation is out of date and needs to be updated.
+Eclipse has not been actively used in development.**
 
 StateCU can also be compiled using Eclipse, which relies on the `make` command and `makefile`.
 
