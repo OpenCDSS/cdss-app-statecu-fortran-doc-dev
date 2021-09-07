@@ -12,6 +12,7 @@ This page contains the following sections:
 * [Repository Contents](#repository-contents)
 * [Development Environment](#development-environment)
 * [Editing and Viewing Content](#editing-and-viewing-content)
+* [Publishing](#publishing)
 * [Style Guide](#style-guide)
 * [License](#license)
 * [Contributing](#contributing)
@@ -48,8 +49,8 @@ C:\Users\user\                               Windows user home folder.
 /cygdrive/C/Users/user/                      Cygwin user home folder that overlaps Windows files.
   cdss-dev/                                  Projects that are part of Colorado's Decision Support Systems.
     StateCU/                                 StateCU product folder.
------------ below here folders must match --------------------------
       git-repos/                             Git repositories for StateCU.
+----------- abover line are recommended, below line folders must match --------------------------
         cdss-app-statecu-fortran/            StateCU source code development.
         cdss-app-statecu-fortran-doc-dev/    StateCU developer documentation.
         cdss-app-statecu-fortran-doc-user/   StateCU user documentation.
@@ -73,6 +74,11 @@ If the development environment is properly configured, edit and view content as 
     2. The `mkdocs-project/mkdocs.yml` file lists files to include in the website.
 2. Run the `build-util/run-mkdocs-serve-8000.sh` script (Git Bash, Cygwin, Linux).
 3. View content in a web browser using URL `http://localhost:8000`.
+
+## Publishing
+
+Run the `build-util/copy-to-co-dnr-gcp.sh` script to upload the documentation to the State's GCP bucket.
+Run with `-l` to also copy to the latest folder.
 
 ## Style Guide ##
 
@@ -114,6 +120,7 @@ This repository is maintained by the OpenCDSS team.
 The following release notes indicate the major update history for documentation.
 See the GitHub issues for details.
 
+* 2021-09-06 - Update for StateCU 14.0.0.
 * 2019-04-27 - Update to use opencdss.state.co.us.
 * 2019-03-25 - Split documentation out of `cdss-app-statecu-fortran` repository.
 * 2019-03-23 - Update to MkDocs 1.04.

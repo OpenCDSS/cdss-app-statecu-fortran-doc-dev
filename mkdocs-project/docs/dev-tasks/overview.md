@@ -10,7 +10,7 @@ This documentation describes common tasks, roughly in the order from design to d
 * [Documenting](documenting.md) - how developers should document code, API, create developer and user documentation
 * [Troubleshooting Eclipse](troubleshooting-eclipse.md) - figuring out why Eclipse is not working, and responding to Eclipse errors (beyond code syntax errors)
 * [Compiling](compiling.md) - compiling the software
-* [Testing](testing.md) - how to automate StateCU code testing
+* [Testing](testing.md) - how to test StateCU software
 * [Releasing](releasing.md) - building an installer and releasing an operational StateCU
 * [FAQ for Cygwin](faq-cygwin.md) - frequently asked questions about Cygwin
 * [FAQ for Linux](faq-linux.md) - frequently asked questions about Linux

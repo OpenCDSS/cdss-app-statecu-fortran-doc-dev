@@ -2,7 +2,7 @@
 
 **This is a very rough outline and needs work to educate developers about the StateCU code organization.**
 
-The StateCU Fortran code is divided into separate files with .for extension.
+The StateCU Fortran code is divided into separate files with `.for` extension.
 Each subroutine is in a separate file and the name of the file matches the subroutine.
 
 Need to describe code modules at a high level:
@@ -26,7 +26,7 @@ Need to describe code modules at a high level:
 
 The StateCU code has been processed with Doxygen software to produce HTML documentation.
 Additional code formatting can occur to enable more complete documentation.
-See the [Development Tasks / Documenation section](../dev-tasks/documenting.md)
+See the [Development Tasks / Documentation section](../dev-tasks/documenting.md)
 for information on using Doxygen to generate code documentation.
 
 ## Fortran Conventions

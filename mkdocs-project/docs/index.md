@@ -39,10 +39,10 @@ If the page is viewed in a narrow window the navigation menus may be compressed 
 
 ## Colorado's Decision Support Systems ##
 
-Colorado's Decision Support Systems ([CDSS, cdss.state.co.us](https://www.colorado.gov/cdss))
+Colorado's Decision Support Systems ([CDSS, cdss.colorado.gov](https://cdss.colorado.gov/))
 has been developed to answer important questions about Colorado's water resources.
-CDSS efforts are led by the [Colorado Water Conservation Board (CWCB)](http://cwcb.state.co.us)
-and [Colorado Division of Water Resources (DWR)](http://water.state.co.us).
+CDSS efforts are led by the [Colorado Water Conservation Board (CWCB)](https://cwcb.colorado.gov/)
+and [Colorado Division of Water Resources (DWR)](https://dwr.colorado.gov/).
 
 ![CDSS Website](index-images/CDSS-website.png)
 
@@ -55,7 +55,7 @@ StateCU results are used as input to the StateMod water allocation model.
 
 In late 2016, the CWCB funded the OpenCDSS project to move StateCU and other CDSS software to open source licensing
 and establish open source software projects.
-The [Open Water Foundation](http://openwaterfoundation.org) was contracted to lead the OpenCDSS project.
+The [Open Water Foundation](https://openwaterfoundation.org) was contracted to lead the OpenCDSS project.
 
 ## License ##
 

@@ -16,7 +16,7 @@ This documentation includes the following documentation:
 ## Developer Documentation Using MkDocs
 
 This developer documentation uses MkDocs and should be updated appropriately to keep the documentation current.
-See the [Initial Project Setup / Documentation, Develper (MkDocs)](../project-init/doc-dev.md)
+See the [Initial Project Setup / Documentation, Developer (MkDocs)](../project-init/doc-dev.md)
 for background on how the documentation is configured.
 If using the standard development files structure,
 the developer documentation is located in `~/cdss-dev/StateCU/git-repos/cdss-app-statecu-fortran-doc-dev/mkdocs-project`.
@@ -54,15 +54,19 @@ Run the `mkdocs-project/build-util/copy-to-co-dnr-gcp.sh` script to publish the 
 to the State of Colorado's Google Cloud Platform website.
 The documentation will be installed into a folder corresponding to the software version.
 
+This script also provides the option to publish to a `latest` folder.
+This is useful because other documentation that links to StateCU documentation can
+use the generic `latest` link rather than requiring updates to link to a specific version.
+
 ## User Documentation Using MkDocs
 
-The user documentation for StateCU currently uses Microsoft Word and is distributed as PDF.
-Minimal MkDocs documentation has been created in the
-[`cdss-app-statecu-fortran-doc-user` repository](https://github.com/OpenCDSS/cdss-app-statecu-fortran-doc-user).
-See the [Initial Project Setup / Documentation, User (MkDocs)](../project-init/doc-user.md)
-for background on how the documentation is configured.
-If using the standard development files structure,
-the user documentation is located in `~/cdss-dev/StateCU/git-repos/cdss-app-statecu-fortran-doc-user/mkdocs-project`.
+The original user documentation for StateCU used Microsoft Word and was distributed as PDF.
+The original documentation has since been updated to use Markdown and MkDocs.
+See the
+[`cdss-app-statecu-fortran-doc-user`](https://github.com/OpenCDSS/cdss-app-statecu-fortran-doc-user)
+repository for more information.
+
+Run the `build-util/copy-to-co-dnr-gcp.sh` script to publish the documentation.
 
 ## Fortran Code API Documentation Using Doxygen
 
@@ -70,7 +74,7 @@ The StateCU subroutines, functions, and modules should be documented using Doxyg
 See the following resources:
 
 * [Doxygen - Comment blocks in Fortran](http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#fortranblocks)
-* [NASA Modeling Guru:  Using Doxygen with Fortran soruce code](https://modelingguru.nasa.gov/docs/DOC-1811)
+* [NASA Modeling Guru:  Using Doxygen with Fortran source code](https://modelingguru.nasa.gov/docs/DOC-1811)
 
 Doxygen is currently used mainly to graph the calling sequence of functions.
 

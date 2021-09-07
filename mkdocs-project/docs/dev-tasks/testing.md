@@ -3,16 +3,50 @@
 Automating software testing is an important software development task because it helps ensure that software performs as intended.
 It is particularly important to ensure that a change in one part of the code does not break another part of the code,
 and that changes in the computer environment don't break the software.
-Automated testing has not been a large part of StateCU software development in the past and needs to be added.
 
 This documentation contains the following sections:
 
-* [Test Code Using Unit Tests](#test-code-using-unit-tests)
-* [Test StateCU by Running Reference Dataset](#test-statecu-by-running-reference-dataset)
-* [Automated Functional Testing Using `pytest`](#automated-functional-testing-using-pytest)
+* [Introduction](#introduction)
+* [Test StateCU by Running Reference Datasets](#test-statecu-by-running-reference-datasets)
 * [Automated Functional Testing Using TSTool](#automated-functional-testing-using-tstool)
+* [Test Code Using Unit Tests](#test-code-using-unit-tests)
 
 ----------------
+
+## Introduction
+
+Automated testing of StateCU software has not been formalized in the past.
+This documentation describes the current state of testing.
+The [`cdss-app-statecu-fortran-test`](https://github.com/OpenCDSS/cdss-app-statecu-fortran-test)
+repository contains StateCU tests.
+
+Testing generally involves two approaches:
+
+1. Create small stand-alone datasets that test specific software features,
+such as a consumptive use method or model option,
+to verify specific computational code.
+These datasets are not currently included in StateCU test repository but could be added,
+similar to StateMod or TSTool software tests.
+2. Run full datasets using different StateCU executable versions and compare the results.
+This helps identify the impacts of a change in one version compared to a baseline version.
+The baseline version is typically the latest published release,
+assuming that it has been tested sufficiently.
+This approach is the focus of current automated testing.
+
+The following sections provide more details about testing.
+
+## Test StateCU by Running Reference Datasets
+
+The current approach to testing StateCU is to run entire datasets using different StateCU versions
+and compare the results to ensure that differences are small or are otherwise explainable.
+This approach is described in the
+[`cdss-app-statecu-fortran-test` `README`](https://github.com/OpenCDSS/cdss-app-statecu-fortran-test).
+
+## Automated Functional Testing Using TSTool
+
+TSTool software is used to implement dataset tests as described in the previous section.
+TSTool can also be used to implement automated tests on small datasets and run suites of tests.
+This approach can be used if small datasets are created for testing.
 
 ## Test Code Using Unit Tests
 
@@ -24,32 +58,5 @@ There does not seem to be extensive unit test frameworks for Fortran.  See:
 
 * [A look at FORTRAN unit test frameworks](https://www.software.ac.uk/blog/2016-09-28-look-fortran-unit-test-frameworks)
 
-A place-holder folder `src/test` has been created in the repository and `src/test/fortran` could be used for unit tests.
-
-**Need to evaluate Fortran unit tests for automated testing - how does it fit into this project?**
-
-## Test StateCU by Running Reference Dataset
-
-**Need to work with WWG to help explain which dataset should be run and how to check results.
-Need to put the dataset somewhere on the web for developers to download.
-Perhaps also explain how to use tools like KDiff3.**
-
-## Automated Functional Testing Using pytest
-
-A place-holder folder `src/test` has been created in the repository and `src/test/pytest` could be used for `pytest` tests.
-
-**pytest may be a way to run functional tests, for example run StateCU from the command line
-on simple datasets and compare output with expected output.  Need to decide whether to prototype automated testing with pytest or
-try some other automation tool.**
-
-## Automated Functional Testing Using TSTool
-
-TSTool software can be used to implement automated tests and this approach is used to test TSTool itself.
-The benefit of using TSTool is that it can read StateCU input and output time series files and can do time series 
-comparison using a precision.
-Therefore if small, allowable, differences are seen, TSTool can treat as a pass,
-whereas a simple file comparison would show a fail.
-
-A place-holder folder `src/test` has been created in the repository and `src/test/tstool` could be used for TSTool tests.
-
-**Need to decide whether to prototype this approach.**
+Unit tests could be implemented in the future,
+especially if StateCU is ported to another language that provides a unit test framework.
