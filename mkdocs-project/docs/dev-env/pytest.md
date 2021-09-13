@@ -1,5 +1,8 @@
 # Development Environment / pytest
 
+**`pytest` is not currently used for testing but may be used in the future.
+This documentation is retained in case it is useful in the future.**
+
 The `pytest` software is a useful tool that provides enhanced unit test features,
 which can can also be used for functional testing of Python and other software (in this case StateCU).  See also:
 
@@ -7,7 +10,7 @@ which can can also be used for functional testing of Python and other software (
 
 **pytest has not yet been adopted as the testing tool but may be evaluated.
 It may also be possible to use a Fortran unit test tool, but Fortran tools seem limited.
-TSTool and other tools may also be used for functional testing.**
+TSTool can be implemented for testing, similar to the StateMod tests.**
 
 This documentation contains the following sections:
 

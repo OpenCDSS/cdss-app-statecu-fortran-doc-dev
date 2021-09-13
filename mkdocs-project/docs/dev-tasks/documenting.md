@@ -29,7 +29,8 @@ See the following resources for information on MkDocs and Markdown:
 ### Run MkDocs Server to View Documentation
 
 MkDocs runs a local Python web server that allows the browser to view the documentation.
-To start the server in Git Bash, change to the folder where the documentation configuration file exists and start the server.
+To start the server in Git Bash, change to the folder where the documentation configuration
+file exists and start the web server, for example for developer documentation.
 
 ```
 $ cd /C/Users/userName/cdss-dev/StateCU/git-repos/cdss-app-statecu-fortran-doc-dev/build-util
@@ -38,7 +39,7 @@ $ ./run-mkdocs-serve-8001.sh
 
 The following indicates that the server is running.  If an error is shown, it is usually because the
 `mkdocs.yml` file lists a file that does not yet exist or the file has a syntax problem such as mis-matched quotes.
-If a problem occurs, fix the problem and try restarting the server.
+If a problem occurs, fix the problem and if necessary restart the server.
 
 ![mkdocs serve](documenting-images/mkdocs-serve.png)
 
@@ -50,7 +51,7 @@ Stop the server with `Ctrl-C` in the command shell window.
 
 ### Publish the documentation.
 
-Run the `mkdocs-project/build-util/copy-to-co-dnr-gcp.sh` script to publish the documentation
+Run the `build-util/copy-to-co-dnr-gcp.sh` script to publish the documentation
 to the State of Colorado's Google Cloud Platform website.
 The documentation will be installed into a folder corresponding to the software version.
 
