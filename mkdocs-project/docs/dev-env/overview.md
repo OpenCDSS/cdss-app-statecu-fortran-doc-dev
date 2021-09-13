@@ -35,20 +35,24 @@ The following software are required for StateCU development:
 (**MinGW on Windows is the initial focus and Linux has been tested to a lesser degree**)
 2. [Git](git.md) - needed to perform command line version control operations
 3. [Python and pip](python.md) - needed by MkDocs and pytest, and useful general tool
-4. [pytest](pytest.md) - an option being evaluated for automated testing
+(**skip if not editing MkDocs documentation and not creating automated tests with Python**)
+4. [pytest](pytest.md) - an option being evaluated for automated testing (**skip if not creating automated tests with Python**)
 5. [MkDocs](mkdocs.md) - MkDocs is used for developer and user documentation static websites, including this documentation
+(**skip if not editing MkDocs documentation**)
 6. [Java 8](java8.md) - used to run Eclipse, and can be used to write utility programs
+(**skip if using a text editor rather than Eclipse/Photran**)
 7. [gfortran](gfortran.md) - compiler for the StateCU Fortran software
 8. [Eclipse/Photran](eclipse.md) - IDE used for interactive Fortran software development
-9. [Doxygen](doxygen.md) - documentation tool
-10. [KDiff3](kdiff3.md) - tool for comparing files
+(**skip if using a text editor rather than Eclipse/Photran**)
+9. [Doxygen](doxygen.md) - documentation tool (**skip if not creating graphs of code calls**)
+10. [KDiff3](kdiff3.md) - tool for comparing files (**skip if not comparing files or have equivalent tool**)
 
 -------------------
 
 ## Software Install Location Considerations
 
 The software development environment must be appropriately configured to effectively develop StateCU and support collaboration.
-Development environment setup is actually a major effort before any code can be written
+Development environment setup is a relatively major effort before any code can be written
 and is typically done the first time by someone that has a good grasp of the technologies.
 Failing to understand how to set up the development environment will likely lead to wasted time
 and possibly back-tracking on previous software development work.

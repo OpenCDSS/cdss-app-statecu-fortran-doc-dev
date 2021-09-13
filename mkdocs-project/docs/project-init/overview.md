@@ -64,40 +64,40 @@ There does not seem to be a clear folder structure standard for Fortran projects
 builds upon [Maven Java Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
 
 ```text
-/c/users/user/                           Git Bash user files (same as Windows location).
-/home/user/                              Linux user files.
-C:\Users\user\                           Windows user files (same as Git Bash location).
-  cdss-dev/                              CDSS software development.
-    StateCU/                             CDSS StateCU software project.
-      eclipse-workspace/                 Eclipse workspace to organize Eclipse projects (not in Git repository).
-      git-repos/                         Git repositories that comprise StateCU.
-        cdss-app-statecu-fortran/        StateCU Git main program repository.
-          .cproject/                     Eclipse project files (C project is used for Fortran).
-          .git/                          Git local repository - DO NOT EDIT DIRECTLY.
-          .gitattributes                 Git repository properties.
-          .github/                       Template for GitHub issues, etc.
-          .gitignore                     Git repository global ignore list.
-          .project/                      Eclipse project settings.
-          .setttings/                    Eclipse project settings.
-          build-util/                    Useful scripts for development/build environment.
-          doc-dev-doxygen-project/       Auto-generated software code documentation, using Doxygen.
-          doc-dev-mkdocs-project/        Markdown/MkDocs project for the developer documentation.
-          doc-user-mkdocs-project/       Markdown/MkDocs project for the user documentation.
-          LICENSE.md                     License file.
-          README.md                      This file.
-          resources/                     Additional resources.
-          src/                           StateCU source code, main and tests.
-            main/                        StateCU program code.
-              fortran/                   StateCU Fortran code.
-                *.for                    Fortran source files.
-                *.inc                    Fortran include files (common blocks).
-                makefile                 Used with make program to compile software.
-              test/                      StateCU unit tests, possible for future.
+/c/users/user/                              Git Bash and MinGW user files (same as Windows location).
+/home/user/                                 Linux user files.
+C:\Users\user\                              Windows user files (same as Git Bash location).
+  cdss-dev/                                 CDSS software development.
+    StateCU/                                CDSS StateCU software project.
+      eclipse-workspace/                    Eclipse workspace to organize Eclipse projects (not in Git repository).
+      git-repos/                            Git repositories that comprise StateCU.
+        cdss-app-statecu-fortran/           StateCU Git main program repository.
+          .cproject/                        Eclipse project files (C project is used for Fortran).
+          .git/                             Git local repository - DO NOT EDIT DIRECTLY.
+          .gitattributes                    Git repository properties.
+          .github/                          Template for GitHub issues, etc.
+          .gitignore                        Git repository global ignore list.
+          .project/                         Eclipse project settings.
+          .setttings/                       Eclipse project settings.
+          build-util/                       Useful scripts for development/build environment.
+          doc-dev-doxygen-project/          Auto-generated software code documentation, using Doxygen.
+          LICENSE.md                        License file.
+          README.md                         This file.
+          resources/                        Additional resources.
+          src/                              StateCU source code, main and tests.
+            main/                           StateCU program code.
+              fortran/                      StateCU Fortran code.
+                *.for                       Fortran source files.
+                *.inc                       Fortran include files (common blocks).
+                makefile                    Used with make program to compile software.
+              test/                         StateCU unit tests, possible for future.
                 fortran/
                   *.for
-                python/                  Envisioned for pytest functional tests, future.
+                python/                     Envisioned for pytest functional tests, future.
                   *.py
-        cdss-app-statecu-fortran-test/   StateCU functional tests.
+        cdss-app-statecu-fortran-doc-dev/   StateCU automated tests.
+        cdss-app-statecu-fortran-doc-user/  StateCU automated tests.
+        cdss-app-statecu-fortran-test/      StateCU automated tests.
 ```
 
 ## Eclipse File Location Overview

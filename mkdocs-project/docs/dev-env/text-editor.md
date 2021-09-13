@@ -15,6 +15,7 @@ Text editors that are known to be used with StateCU are discussed below.
 	+ [Sublime](#sublime)
 	+ [UltraEdit](#ultraedit)
 	+ [vim](#vim)
+	+ [Visual Studio Code](#visual-studio-code)
 	+ [Other Editors](#other-editors)
 
 -------------
@@ -90,6 +91,11 @@ The following are useful `vim` features:
 set list
 set listchars=tab:>-
 ```
+
+### Visual Studio Code ###
+
+The [Visual Studio Code](https://code.visualstudio.com/)
+editor is useful for editing Markdown files because it provides a documentation preview.
 
 ### Other Editors ###
 

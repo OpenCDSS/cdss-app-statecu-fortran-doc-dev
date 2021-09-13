@@ -21,7 +21,7 @@ Consequently the build and release process is done by the primary developer(s).
 The full build process checklist is as follows.
 All release artifacts include the version found in the software code.
 
-1. As of version 14.0.0, the software version has 3 parts such as 14.0.0.
+1. As of version 14.0.0, the software version has 3 parts such as 14.0.0 (parts are **not** padded with extra zeros as was done previously).
 The version should be incremented accordingly as public releases are made
 based on [Semantic versioning](https://semver.org/).
 If necessary, add a fourth part such as `.dev1`, `.dev2`, etc. to indicate development versions that

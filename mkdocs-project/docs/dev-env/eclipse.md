@@ -1,5 +1,9 @@
 # Development Environment / Eclipse and Photran
 
+**Eclipse is not actively used by the main StateCU developers.
+It was initially evaluated as an option.
+The Eclipse and Photran versions described in this documentation will need to be updated.**
+
 Eclipse is used for the integrated development environment (IDE).
 The Eclipse Photran plugin is used to provide a Fortran IDE, which can facilitate editing code, debugging, etc.
 The following Eclipse/Photran download page indicates that Eclipse Mars is required.

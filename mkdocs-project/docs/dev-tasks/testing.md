@@ -15,22 +15,22 @@ This documentation contains the following sections:
 
 ## Introduction
 
-Automated testing of StateCU software has not been formalized in the past.
+Automated testing of StateCU software has not been formalized into a software framework in the past.
 This documentation describes the current state of testing.
 The [`cdss-app-statecu-fortran-test`](https://github.com/OpenCDSS/cdss-app-statecu-fortran-test)
 repository contains StateCU tests.
 
 Testing generally involves two approaches:
 
-1. Create small stand-alone datasets that test specific software features,
+1. Create small stand-alone tests that test specific software features,
 such as a consumptive use method or model option,
 to verify specific computational code.
-These datasets are not currently included in StateCU test repository but could be added,
+These tests are not currently included in StateCU test repository but could be added,
 similar to StateMod or TSTool software tests.
 2. Run full datasets using different StateCU executable versions and compare the results.
 This helps identify the impacts of a change in one version compared to a baseline version.
-The baseline version is typically the latest published release,
-assuming that it has been tested sufficiently.
+The baseline version is typically the latest published release
+that it has been sufficiently tested and verified.
 This approach is the focus of current automated testing.
 
 The following sections provide more details about testing.

@@ -23,7 +23,7 @@ Compiling on Linux is similar to Windows.  Use the `make` command targets.
 
 ### Windows - MinGW
 
-To compile StateCU, open an ***MSYS2 MinGW 64-bit*** window.
+To compile StateCU, open an ***MSYS2 64bit / MSYS2 MinGW 64-bit*** window.
 There is no need for any additional configuration (as was required in earlier 32-bit StateCU development environment).
 
 Then change to the code location and run the makefile,
@@ -43,6 +43,10 @@ The version will match that in the `gcommon.inc` file.
 Use the `make help` command to list available `makefile` targets.
 The following are the main targets that are useful during development:
 
+**<p style="text-align: center;">
+`make` Targets for StateCU
+</p>**
+
 | **`makefile` Target**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **Description** |
 | -- | -- |
 | `clean` | Remove dynamically created files (but not final executable). |
@@ -60,7 +64,9 @@ A typical development session will involve repeating:
 
 1. editing source code
 2. `make statecu_prog`
-3. Copy the excutable to `StateCU` folder of a dataset for testing.  See the [Testing](testing.md) documentation.
+3. Copy the executable to `StateCU` folder of a dataset for testing.
+Or, the tests can refer to the executable without needing to copy.
+See the [Testing](testing.md) documentation.
 
 ## Compile StateCU in Eclipse
 

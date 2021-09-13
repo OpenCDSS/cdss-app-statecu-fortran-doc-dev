@@ -39,19 +39,23 @@ The executable name contains the version to uniquely identify the software versi
 The StateCU executable is also distributed with a general `statecu.cmd` file
 that can be used to run the most recent executable, for example from the StateCU GUI.
 The StateCU GUI can be updated to use the general `statecu.cmd` program
-as the default and can also rrun the version in a dataset's `StateCU` folder.**
+as the default and can also rrun the version in a dataset's `StateCU` folder
+(if the executable is packaged with a dataset).**
 
-The approach for distributing the StateCU executable (as of version 13.03) has been to package the `statecu.exe` file
-with the StateCU GUI and datasets, as described in the next two sections.
-For example, see the [CDSS StateCU](https://cdss.colorado.gov/software/statecu) web page.
+The StateCU executable has been distributed with the StateCU GUI as the `statecu.exe` file.
+See the [CDSS StateCU](https://cdss.colorado.gov/software/statecu) web page.
 For Windows, the software defaults to an installation folder: 
 
 ```
 C:\CDSS\StateCU\bin\
-    statecu.exe                             (StateCU model executable)
-    statecui.exe                            (StateCU GUI executable)
-    other files                             (Many other files are used by the GUI)
+    statecu.exe      StateCU model executable.
+    statecui.exe     StateCU GUI executable.
+    other files      Many other files are used by the GUI.
 ```
+
+The StateCU GUI software can be updated to use the longer filename and `statecu.cmd`,
+or the longer filename can be renamed to the generic name shown above
+to use newer StateCU executable version with older StateCU GUI.
 
 ### Information from Jim Brannon about the StateCU GUI
 
@@ -72,9 +76,9 @@ StateCU FORTRAN code was finally added to a version control system (git) much la
 The following information is for historical purposes only and can be used to confirm whether an executable is 32-bit or 64-bit.**
 
 The StateCU software is a Fortran program that is compiled to a 32-bit static executable using the `gfortran` compiler.
-The 32-bit Windows executable will run on 64-bit Windows 7 and 10 computers similar to other 32-bit software.
-Although creating a 64-bit executable may be desirable or necessary in the future, it is currently not the focus of development,
-and will require an evaluation of code memory logic and binary output file structure.
+The 32-bit Windows executable will run on 64-bit Windows computers similar to other 32-bit software.
+However, compiling and distributing the 64-bit executable is now the default for development and distribution.
+
 See the following resources to understand whether a program has been compiled as a 32-bit or 64-bit executable:
 
 * [10 Ways to Determine if Application is Compiled for 32-bit or 64-bit](https://www.raymond.cc/blog/determine-application-compiled-32-64-bit/)
@@ -141,7 +145,7 @@ Image Base = 4194304
 ```
 
 Another option is to use an editor that can edit a binary file. 
-For example, use Windows `Notepad`, `Notepad++`, or `vim -b` editors.
+For example, use Windows `Notepad`, `Notepad++`, or Linux `vim -b` editors.
 Search for the characters `PE` at the top of the file.
 
 * If these characters are followed closely by `L`, then the executable is 32-bit.
