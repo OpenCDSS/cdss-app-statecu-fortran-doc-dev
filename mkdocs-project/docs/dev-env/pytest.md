@@ -56,4 +56,4 @@ The following may be useful:  [improve slow startup](http://stackoverflow.com/qu
 
 ## Writing `pytest` Tests
 
-See the [Development Tasks / Testing](../dev-tasks/testing#automated-testing-using-pytest) documentation for examples of tests.
+See the [Development Tasks / Testing](../dev-tasks/testing.md#automated-testing-using-pytest) documentation for examples of tests.

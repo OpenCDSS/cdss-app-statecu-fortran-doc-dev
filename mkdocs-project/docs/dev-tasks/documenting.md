@@ -72,10 +72,9 @@ Run the `build-util/copy-to-co-dnr-gcp.sh` script to publish the documentation.
 ## Fortran Code API Documentation Using Doxygen
 
 The StateCU subroutines, functions, and modules should be documented using Doxygen-style comments.
-See the following resources:
+See the following resource:
 
 * [Doxygen - Comment blocks in Fortran](http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#fortranblocks)
-* [NASA Modeling Guru:  Using Doxygen with Fortran source code](https://modelingguru.nasa.gov/docs/DOC-1811)
 
 Doxygen is currently used mainly to graph the calling sequence of functions.
 

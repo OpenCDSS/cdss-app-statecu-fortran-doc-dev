@@ -120,6 +120,7 @@ This repository is maintained by the OpenCDSS team.
 The following release notes indicate the major update history for documentation.
 See the GitHub issues for details.
 
+* 2023-04-20 - Updated documentation to fix broken links and remediate issues related to accessibility including alt text for images and heading structures.
 * 2021-09-06 - Update for StateCU 14.0.0.
 * 2019-04-27 - Update to use opencdss.state.co.us.
 * 2019-03-25 - Split documentation out of `cdss-app-statecu-fortran` repository.

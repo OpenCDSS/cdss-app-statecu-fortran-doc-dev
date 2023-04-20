@@ -6,7 +6,7 @@ and multiple collaborators.
 Consequently, it is necessary to restructure the initial files, as described below.
 Helpful information is:
 
-* [Development folder structure](overview#development-folder-structure) - development folder structure for StateCU file
+* [Development folder structure](overview.md#development-folder-structure) - development folder structure for StateCU file
 * [Maven Java Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html) - useful example for Java code
 
 

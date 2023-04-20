@@ -77,7 +77,7 @@ C:\Program Files\
 
 It is possible to create a desktop shortcut to Eclipse.
 However, before doing so, it is recommended to create a batch file to run eclipse,
-as per the [Initial Project Setup / Eclipse Run Script](../project-init/eclipse-run-script/).
+as per the [Initial Project Setup / Eclipse Run Script](../project-init/eclipse-run-script.md).
 The batch file is the recommended way to start Eclipse for StateCU development;
 however, the desktop shortcut is a convenience for general Eclipse use.
 
@@ -102,4 +102,4 @@ Double-clicking on the shortcut desktop icon should then run the desired Eclipse
 ## Next Steps
 
 Additional Eclipse configuration will be performed after finishing development environment setup, as per the
-[Initial Project Setup](../project-init/overview/) documentation - **do not do now**.
+[Initial Project Setup](../project-init/overview.md) documentation - **do not do now**.
